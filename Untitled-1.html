@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BASIC OF CYBER SECURITY by "cyber thread"</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: sticky;
+			top: 0;
+			cursor: pointer;
+		}
+
+		.background {
+			background: rgb(8, 67, 85);
+			background-blend-mode: darken;
+			background-size: cover;
+		}
+
+		.nav-list {
+			width: 70%;
+			display: flex;
+			align-items: center;
+		}
+
+		.logo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.logo img {
+			width: 50px;
+			border-radius: 25px;
+		}
+
+		.nav-list li {
+			list-style: none;
+			padding: 26px 30px;
+		}
+
+		.nav-list li a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.nav-list li a:hover {
+			color: black;
+			display:block;
+			
+			
+		}
+		.nav-list a.active{
+			background-color: rgb(8,67,85);
+              color:white;
+		}
+
+		.rightnav {
+			width: 25%;
+			text-align: right;
+		}
+		@media only screen and (max-width :675px) {
+			.nav-list{
+				flex-direction: column;
+
+			}
+			.nevbar{
+				flex-direction: column;
+				height: 10px;
+			}
+			.rightnav{
+				text-align: left;
+			}
+			
+		}
+
+		#search-term {
+			padding: 5px;
+			font-size: 17px;
+			border: 2px solid grey;
+			border-radius: 9px;
+		}
+		#search-term:hover{
+			color:black;
+			
+		}
+
+		
+		
+		.box-main {
+			padding: 30px 60px;
+			justify-content: center;
+			text-align: center;
+			background: url("https://images.pexels.com/photos/5380673/pexels-photo-5380673.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-5380673.jpg&fm=jpg&_gl=1*13sxo2j*_ga*MTcwMjExNTUzMi4xNjc0NzE2NjYw*_ga_8JE65Q40S6*MTY3NDcxNjY2Mi4xLjEuMTY3NDcxNjY3OS4wLjAuMA..");
+			color: white;
+		}
+		#home {
+			padding: 30px 60px;
+			justify-content: center;
+			text-align: center;
+			background: url("https://t3.ftcdn.net/jpg/02/34/83/62/240_F_234836298_gN8LgcFn1NF8YVC8Ka4bIqjAvi8HZgO5.jpg");
+		}
+
+		
+		.text-big {
+			font-family: 'Piazzolla', serif;
+			padding: 30px 60px;
+			justify-content: center;
+			text-align: center;
+			
+
+		}
+
+		.text-small {
+			font-size: 18px;
+			padding: 30px 60px;
+			text-align: center;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			margin: 7px 0;
+			border: 2px solid white;
+			border-radius: 8px;
+			background: none;
+			color: white;
+			cursor: pointer;
+		}
+
+		.btn-sm {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+		.btn-sm :hover{
+			color: black;
+		}
+		#enroll{
+			position: relative;
+		}
+		#enroll::before{
+			content: "";
+			position:absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			opacity:0.7;
+			background:url("https://images.hdqwalls.com/download/cyber-boy-3t-1920x1080.jpg");
+		}
+
+	#enroll-box{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom:0px; 
+	}
+ #enroll-box input,
+ #enroll-box textarea{
+	width: 100%;
+	padding: 0.5rem;
+
+ }
+ #enroll-box form{
+	width: 40%;
+ }
+ #enroll-box label{
+	font-size: 1.3rem;
+	font-family: 'Piazzolla', serif;
+	
+ }
+		.h-primary {
+			font-family: 'Bree Serif',Serif;
+			font-size: 3.8rem;
+			padding: 12px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.text-footer {
+			text-align: center;
+			padding: 30px 0;
+			font-family: 'Ubuntu', sans-serif;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src= "https://png.pngtree.com/png-vector/20200615/ourmid/pngtree-hacker-wearing-hoodie-and-using-laptop-computer-freak-hacking-and-malware-png-image_2256761.jpg" no repeat alt="no internet conection">
+			</div>
+			
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a class="active" href="#scope">Is Scope</a></li>
+			<li><a class="active" href="#enroll">Enroll</a></li>
+ 		</ul>
+           
+		<div class="rightNav">
+			<form action="Untitled-1.html" method="post">
+			
+				<input type="text" id="search-term" name="search-term">
+			<a class="btn btn-sm">search</a>	
+			</form>
+			
+		</div>
+		
+	</nav>
+
+	
+		       <div class="box-main">
+				<h1 class="text-big" >WELCOME<br></br>to<br></br>"cyber thread"</h1>
+				<hr></hr>
+				<h2 class="text-big">We are provide the basic information of cyber security to student,who are interested in cyber security and new in field of cyber security.<br></br>Like:-
+				</h2>
+				
+				<h1>What is cyber security?</h1>
+				<h1 >What we need cyber security?</h1>
+				<h1 >What is an attacker?</h1>
+				<h1 >What is an hacker?......</h1>
+				<br></br>
+				<br></br>
+				</div>
+
+				<div id="home">
+				<h1 class="text-big">What is cyber security?</h1>
+				<hr></hr>
+				<p class="text-small">
+					Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.
+				</p>
+		<br></br>
+				<h1 class="text-big">
+					What we need cyber security?
+				</h1>
+				<hr></hr>
+				<p class="text-small">
+					In 2021, cybercrime cost the world $6 trillion. By 2025, these costs will increase to $10.5 trillion. Cybercrime is an increasingly serious problem, and to address it, strong cybersecurity is critical.
+				</p>
+				<br></br>	
+		
+	
+
+	
+		
+			<h1 class=" text-big">What is an attacker?</h1>
+<hr></hr>
+			<p class="text-small">
+				An attacker is a person or process that attempts to access data, functions, or other restricted areas of the system without authorization, potentially with malicious intent. Depending on the context, cyberattacks can be part of cyber warfare or cyberterrorism.
+			</p>
+			<br></br>
+		
+		
+			<h1 class=" text-big">What is an hacker?</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						A hacker is an individual who uses computer, networking or other skills to overcome a technical problem. The term also may refer to anyone who uses their abilities to gain unauthorized access to systems or networks in order to commit crimes. A hacker may, for example, steal information to hurt people via identity theft or bring down a system and, often, hold it hostage in order to collect a ransom.
+					</p>
+		
+		
+
+				<br></br>
+
+<h1 class=" text-big">Define the tree Types of hacker.</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						Hackers fall into three general categories: black hat hackers, white hat hackers, and gray hat hackers. Although hackers are often associated with exploiting vulnerabilities to gain unauthorized access to computers, systems, or networks, not all hacking is malicious or illegal.
+						<h3>Black hat hackers </h3><hr></hr>
+Black hat hackers are cybercriminals that illegally crack systems with malicious intent. Seeking to gain unauthorized access to computer systems is the definition of black hat hacking. Once a black hat hacker finds a security vulnerability, they try to exploit it, often by implanting a virus or other type of malware such as a trojan.
+
+Ransomware attacks are another favored ploy that black hat hackers use to extort financial gains or breach data systems.
+<br></br>
+<h3>White hat hackers</h3><hr></hr>
+White hat hackers are ethical security hackers who identify and fix vulnerabilities. Hacking into systems with the permission of the organizations they hack into, white hat hackers try to uncover system weaknesses in order to fix them and help strengthen a system’s overall security.
+
+Many cybersecurity leaders started out as white hat hackers, but the vital role played by ethical hacking is still widely misunderstood, as made clear by a recent ethical hacking case in Germany.
+<br></br>
+<h3>Gray hat hackers </h3><hr></hr>
+Gray hat hackers may not have the criminal or malicious intent of a black hat hacker, but they also do not have the prior knowledge or consent of those whose systems they hack into. Nevertheless, when gray hat hackers uncover weaknesses such as zero-day vulnerabilities, they report them rather than fully exploiting them. But gray hat hackers may demand payment in exchange for providing full details of what they uncovered.
+		
+		
+
+				<br></br>
+				<h1 class=" text-big">What is CIA ? define it.</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						The CIA Triad is a fundamental cybersecurity model that acts as a foundation in the development of security policies designed to protect data. The three letters in CIA Triad stand for Confidentiality, Integrity, and Availability.
+					<br></br>
+						<h3>Confidentiality(Keeping data secure) </h3><hr></hr>
+						At its core, the tenet of confidentiality is about keeping what needs to be private, private. Government regulation, industry compliance requirements, expectations from your business partners and your company’s own business priorities all play a role in defining what data needs to be kept confidential
+						<br></br>
+						<h3>Integrity (Keeping data clean)</h3><hr></hr>
+						
+						Integrity focuses on keeping data clean and untainted, both when it’s uploaded and when it’s stored. This means making sure only those who are allowed to modify it, modify it. 
+						<br></br>
+						<h3>Availability(Keeping data accessible )</h3><hr></hr>
+
+
+Availability essentially means that when an authorized user needs to access data or information, they can. It can sometimes be confused with or even seem to contradict confidentiality. 
+					</p>
+		
+		
+
+				<br></br>
+				
+				<h1 class=" text-big">What is Cryptography</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						Cryptography is technique of securing information and communications through use of codes so that only those person for whom the information is intended can understand it and process it. Thus preventing unauthorized access to information. The prefix “crypt” means “hidden” and suffix graphy means “writing”.
+					</p>
+		
+		
+
+				<br></br>
+
+				<h1 class=" text-big">What is traditional security model?</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						Traditional IT security typically involves the management and maintenance of physical, on-premises computing components involved with network security and data storage by an on-site IT team. Its processes help to secure and monitor any unauthorized access, malicious software, or any other threats from abusing your data, resources, and applications through the local network and on-site servers.
+					</p>
+		
+		
+
+				<br></br>
+				<h1 class=" text-big">What is OSI model.</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network. It was the first standard model for network communications, adopted by all major computer and telecommunication companies in the early 1980s.In the OSI reference model, the communications between a computing system are split into seven different abstraction layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.
+
+					</p>
+				<br></br>
+				<h1 class=" text-big">What is TCP/IP model?</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						TCP/IP stands for Transmission Control Protocol/Internet Protocol and is a suite of communication protocols used to interconnect network devices on the internet. TCP/IP is also used as a communications protocol in a private computer network (an intranet or extranet).
+						There are four layers of the TCP/IP model: network access, internet, transport, and application. Used together, these layers are a suite of protocols. The TCP/IP model passes data through these layers in a particular order when a user sends information, and then again in reverse order when the data is received.
+						</P>
+				<br></br>
+				<h1 class=" text-big">What is penetration testing? define all step who perfom by tester.</h1>
+
+		<hr></hr>
+					<p class="text-small">
+						A penetration test (pen test) is an authorized simulated attack performed on a computer system to evaluate its security. Penetration testers use the same tools, techniques, and processes as attackers to find and demonstrate the business impacts of weaknesses in a system.
+						Pen testers simulate attacks by motivated adversaries. To do this, they typically follow a plan that includes the following <br></br>
+ <u>  <strong> Reconnaissance</strong></u>. Gather as much information about the target as possible from public and private sources to inform the attack strategy. Sources include internet searches, domain registration information retrieval, social engineering, nonintrusive network scanning, and sometimes even dumpster diving. This information helps pen testers map out the target’s attack surface and possible vulnerabilities. Reconnaissance can vary with the scope and objectives of the pen test; it can be as simple as making a phone call to walk through the functionality of a system.<br></br>
+<u><strong> Scanning.</strong></u> Pen testers use tools to examine the target website or system for weaknesses, including open services, application security issues, and open source vulnerabilities. Pen testers use a variety of tools based on what they find during reconnaissance and during the test.<br></br>
+<u><strong>Gaining access</strong></u>. Attacker motivations can include stealing, changing, or deleting data; moving funds; or simply damaging a company’s reputation. To perform each test case, pen testers determine the best tools and techniques to gain access to the system, whether through a weakness such as SQL injection or through malware, social engineering, or something else.
+Maintaining access. Once pen testers gain access to the target, their simulated attack must stay connected long enough to accomplish their goals of exfiltrating data, modifying it, or abusing functionality. It’s about demonstrating the potential impact.
+						</P>
+				<br></br>
+</div>
+
+<div id="scope">
+	<h1 class="text-big">Is scope in cyber security?</h1>
+				<hr></hr>
+				<p class="text-small">
+					Cybersecurity jobs are in high demand and the demand is expected to grow by 18% over the next five years. The cybersecurity field involves protecting computer networks and data from unauthorized access, use, or destruction.
+
+				</p>
+		<br></br>
+	</div>
+	
+
+	
+
+<footer >
+		<section id="enroll">
+			<h1 class="h-primary center">Enrollment Form</h1>
+			  <div id="enroll-box">	
+				
+				<form action="">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="enter your name">
+					</div>
+					<div class="form-group">
+						<label for="name">Email Id</label>
+						
+						<input type="email" name="name" id="email" placeholder="enter your email id">
+					</div>
+					<div class="form-group">
+						<label for="name">Contact No.</label>
+					<input type="massage" name="name" id="contact" placeholder="enter your contact no.">
+					</div>
+					<div class="rightnav">
+					<button class="btn btn-sm">submit</button>
+					</div>
+				</form>
+			</div>
+			</section>
+
+			<div class="background">
+			<p class="text-footer">
+				 Design by @Narendra Singh Bhardwaj
+			</p>
+			</div>
+	</footer>
+</body>
+
+</html>
